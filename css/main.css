@@ -1,0 +1,116 @@
+body{
+    background: #1e202b;
+    font-family: "Roboto", sans-serif;
+    color: #bfc1c8;
+}
+:root{
+    --bs-border-color:#009ad8;
+}
+.nav-right img{
+    width: 70px;
+}
+a.first-li {
+    
+    color: #009ad8;
+    border-color: #009ad8;
+}
+.border{
+    border-color: var(--bs-border-color);
+
+}
+.nav-left li a{
+    color: white;
+    border: 2px  #1e202b solid;
+    
+}
+.nav-left li a:hover {
+    border-radius: 25px;
+    
+    border: 2px #009ad8 solid ;
+    color: #009ad8;
+}
+.background{
+    /* background-image: linear-gradient( src(images/sun-sunlight-bright-outdoor-sky.jpg), #000000 50% ,  #000000 50% ); */
+    background-image: url(../images/sun-sunlight-bright-outdoor-sky.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.input-group{
+    background-color:  #1e202b;
+}
+.background input {
+    background-color:  #1e202b;
+}
+.background button{
+    background-color: #009ad8;
+    height: 55px;
+}
+
+.form-control:focus{
+    background-color:  #1e202b;
+    outline: none;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+/* input::-ms-input-placeholder { 
+    color: rgb(255, 255, 255);
+  } */
+  ::placeholder{
+    color: rgb(205, 205, 205) !important;
+  }
+  .today{
+    background-color: #323544;
+  }
+.day{
+    
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 15px  ;
+    text-align: center;
+    font-weight: 400;
+}
+.day-temp{
+    padding: 25px 15px;
+}
+.num{
+    color: white;
+    font-weight: 700;
+    font-size: 6.4rem;
+}
+.wheather-divs{
+    
+    font-size: larger;
+    
+}
+.next-day{
+    background-color: #1e202b;
+}
+.third-day{
+    background-color: #323544;
+}
+  .social-links{
+    width: 240px;
+  }
+  .social-links a {
+    background-color:  #1e202b;
+    width: 35px;
+    height: 35px;
+    font-size: 1.4em;
+    padding: 14px;
+    border-radius: 50%;
+    
+  }
+  .social-links a:hover{
+    color: white;
+    background-color: #009ad8;
+
+  }
+  footer{
+    background: #262936;
+  }
+  footer input{
+    background-color:  #1e202b;
+  }
+  footer button{
+    background-color: #009ad8;
+    height: 45px;
+  }

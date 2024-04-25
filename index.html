@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="my-5  d-flex justify-content-between">
+            <div class="nav-right d-flex">
+                <div><a href="#"><img src="images/logo@2x.png" class="me-3" /></a></div>
+                <div>
+                    <a href="#" class="text-decoration-none fw-bold text-white d-block">weather</a>
+                    <small class="text-secondary">tagline goes here</small>
+                </div>
+
+            </div>
+
+            <div class="nav-left w-50">
+                <ul class="list-unstyled d-flex justify-content-between mb-0">
+                    <li class=""><a href="#"
+                            class="first-li text-decoration-none border-2 rounded-5 px-4 py-1 border">Home</a></li>
+                    <li><a href="#" class=" text-decoration-none ms-2 px-4 py-1">News</a></li>
+                    <li><a href="#" class=" text-decoration-none ms-2 px-4 py-1">Live cameras</a></li>
+                    <li><a href="#" class=" text-decoration-none ms-2 px-4 py-1">Photos</a></li>
+                    <li><a href="#" class=" text-decoration-none ms-2 px-4 py-1">Contact</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+    </div>
+    <div class="background">
+        <div class="container py-5  ">
+            <div class="input-group mb-3 my-5 rounded-5 d-flex align-items-center">
+                <input onkeyup="searchApi()" type="text" class="form-control py-4 rounded-5 text-white px-4 border-0"
+                    placeholder="find your location" aria-label="Recipient's username" aria-describedby="button-addon2" id="search">
+                <button class="btn text-white border-2 border rounded-5 px-5 me-2" type="button"
+                    id="button-addon2">Find</button>
+            </div>
+
+            
+                <div class="row my-5 wheather">
+                    <div class="col-md-4 today p-0 rounded-start-4 current-wheather">
+                        <!-- <div class="wheather-divs ">
+                            <div class="d-flex justify-content-between day rounded-start-4">
+                                <div>tuesday</div>
+                                <div>2april</div>
+                            </div>
+                            <div  class="day-temp">
+                                <div>
+                                    <div>${allCities[0].name}</div>
+                                    <div class="d-flex align-items-center">
+                                    <div class="py-4 num me-5">9<sub>°</sub>c</div>
+                                    <div><img src="images/116.webp"/></div>
+                                    </div>
+                                </div>
+                                <div class="my-4 text-info">Partly cloudy</div>
+                                <div>
+                                    <span class="me-4"><i class="fa-solid fa-umbrella"></i> 20%</span>
+                                    <span class="me-4"><i class="fa-solid fa-wind"></i> wind</span>
+                                    <span class="me-4"><i class="fa-solid fa-compass"></i> east</span>
+                                </div>
+        
+                            </div>
+                        </div> -->
+        
+                    </div>
+                    
+                    <div class="col-md-4 next-day p-0 next-wheather">
+                        <!-- <div class="wheather-divs ">
+                            <div class="day">
+                                <div>wendsday</div>
+                            </div>
+                            <div class="px-3 py-3 text-center">
+                                
+                                    <div><img class="" src="images/113 (1).webp"/></div>
+                                    <div class="fa-2x text-white fw-bold my-3">${allCities[1].lat}<sub>°</sub>c</div>
+                                    <div>17.8</div>
+                                    <div class="my-4 text-info">Partly cloudy</div>
+            
+                            </div>
+                        </div> -->
+        
+                    </div>
+
+                    <div class="col-md-4 third-day p-0 rounded-end-4 third-day">
+                        <!-- <div class="wheather-divs ">
+                            <div class="day">
+                                <div>wendsday</div>
+                            </div>
+                            <div class="px-3 py-3 text-center">
+                                
+                                    <div><img class="" src="images/113 (1).webp"/></div>
+                                    <div class="fa-2x text-white fw-bold my-3">${allCities[1].lon}<sub>°</sub>c</div>
+                                    <div>17.8</div>
+                                    <div class="my-4 text-info">Partly cloudy</div>
+            
+                            </div>
+                        </div> -->
+        
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        </div>
+
+    <footer class="py-5">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-8 ">
+                    <div class="input-group mb-3 my-5 rounded-5 d-flex align-items-center ">
+                        <input type="text" class="form-control py-3 rounded-5 text-white px-4 border-0 "
+                            placeholder="Enter your email to subscribe..." aria-label="Recipient's username"
+                            aria-describedby="button-addon2">
+                        <button class="btn text-white border-2 border rounded-5 px-5 me-2" type="button">Find</button>
+                    </div>
+                </div>
+                    <div class="col-md-3 col-md-offset-1">
+                        <div class="social-links  my-5 py-3 text-end">
+                            <a href="#"><i class="fa-brands fa-facebook-f fa-fw"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter fa-fw"></i></a>
+                            <a href="#"><i class="fa-brands fa-google-plus-g fa-fw"></i></a>
+                            <a href="#"><i class="fa-brands fa-pinterest fa-fw"></i></a>
+                        </div>
+
+                    </div>
+                
+                <p class="">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
